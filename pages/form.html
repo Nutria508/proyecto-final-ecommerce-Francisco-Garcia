@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Dead By Deadlight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../multimedia/logo-pagina.png" data-next-head="">
+
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__logo">
+            <a href="../index.html"><img src="../multimedia/Logo_dbd.webp" width="60px"></a>
+        </p>
+
+        <nav class="header__nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="../pages/form.html">Contacto</a></li>
+                <li><a href=""><img class="image" src="../multimedia/carrito-de-compras.png"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1 class="titulo-home">Consultas o Reseñas</h1>
+        <section class="form">
+            <form action="https://formspree.io/f/xjkeeapn" method="POST">
+
+
+                <div class="campo-form">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+
+                <div class="campo-form">
+
+                    <label for="motivo">Motivo: </label>
+                    <select name="motivo">
+                        <option value="question">Consulta</option>
+                        <option value="review">Reseñas</option>
+                    </select>
+                    <div class="estrellas-reseña">
+                        <a href=""><img src="../multimedia/estrella-vacia.png" alt=""></a>
+                        <a href=""><img src="../multimedia/estrella-vacia.png" alt=""></a>
+                        <a href=""><img src="../multimedia/estrella-vacia.png" alt=""></a>
+                        <a href=""><img src="../multimedia/estrella-vacia.png" alt=""></a>
+                        <a href=""><img src="../multimedia/estrella-vacia.png" alt=""></a>
+                    </div>
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+                </div>
+
+                <section>
+                    <input type="hidden" name="_redirect" value="../index.html">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="../pages/form.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="footer__companies">
+                <li><a href="https://www.facebook.com" target="_blank"><img src="../multimedia/facebook.png"
+                            alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="../multimedia/instagram.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://x.com/" target="_blank"><img src="../multimedia/twitter-alt.png" alt="twitter"></a>
+                </li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><img src="../multimedia/whatsapp.png"
+                            alt="whatsapp"></a></li>
+                <li><a href="https://web.telegram.org/" target="_blank"><img src="../multimedia/telegram.png"
+                            alt="telegram"></a></li>
+                <li><a href="https://discord.com/" target="_blank"><img src="../multimedia/discord.png"
+                            alt="discord"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

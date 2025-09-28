@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*Para que 1 rem = 10px*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    background-image: url(../multimedia/fondo.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 3rem;
+    font-weight: bold;
+
+    padding: 1rem;
+    margin-left: 2rem;
+
+}
+
+.header__logo a {
+    color: red;
+    text-decoration: none;
+}
+
+.header nav {
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.image {
+    filter: invert(100%)
+}
+
+.header__nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: inline-block;
+    padding: 0.5rem;
+
+}
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer img {
+    filter: invert(100%)
+}
+
+.footer nav {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer nav ul {
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.footer nav ul a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer__companies {
+    display: flex;
+    margin-right: 2rem;
+}
+
+
+
+
+/*.................................................................................................
+
+                                             Home
+
+....................................................................................................*/
+
+main {
+    width: 90%;
+    flex: 1;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+
+}
+
+main h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.parrafo-home {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.productos-home {
+    width: 100%;
+    text-align: center;
+
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.tarjeta-producto {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-producto:hover {
+    border: 0.25rem solid;
+}
+
+.tarjeta-producto div {
+    display: flex;
+    margin: 2px;
+    align-items: center;
+}
+
+.tarjeta-producto div img {
+    padding-left: 12px;
+    height: fit-content;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    border-radius: 1px;
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+.estrellas-reseña {
+    display: flex;
+
+}
+
+.estrellas-reseña img {
+    filter: invert(50%);
+    padding: 0.5rem;
+}
+
+
+/*.................................................................................................
+
+                                             Contacto
+
+....................................................................................................*/
+
+.form {
+    background-color: black;
+    padding: 5rem;
+    border-radius: 1rem;
+
+    width: 60rem;
+
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.campo-form label {
+  font-size: 2rem;
+}
+.campo-form input,
+.campo-form textarea,
+.campo-form select {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.form section{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.form button {
+  background-color: #b30724;
+  color: #e5e6e8;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+/*.................................................................................................
+
+                                             Media Queries
+
+....................................................................................................*/
+
+
+
+@media (max-width:600px){
+    .reseñas {
+        grid-template-columns: 1fr;
+    }
+    .header__nav ul,
+    .footer nav ul,
+    .footer__companies {
+        flex-wrap: wrap;
+    }
+    .header{
+        justify-content: center;
+    }
+    .header nav{
+        margin-right: 0rem;
+    }
+    
+    
+
+}
+@media (max-width: 768px) {
+
+    .reseñas {
+        grid-template-columns: 1fr;
+    }
+
+    .header__nav ul,
+    .footer nav ul,
+    .footer__companies {
+        flex-wrap: wrap;
+    }
+    .form {
+        width: 87%;
+    }
+    
+}
+
