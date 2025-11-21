@@ -30,53 +30,14 @@
         </nav>
 
     </header>
+
     <main>
+        <h1> Felicitaciones por tu compra</h1>
+        <a href="../index.html">Volver al inicio</a>
+        
 
-        <h1 class="titulo-home">Consultas o Reseñas</h1>
-        <section class="form">
-            <form action="https://formspree.io/f/xjkeeapn" method="POST">
-
-
-                <div class="campo-form-1">
-
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-
-
-                <div class="campo-form-2">
-
-                    <label for="motivo">Motivo: </label>
-                    <select name="motivo">
-                        <option value="question">Consulta</option>
-                        <option value="review">Reseñas</option>
-                    </select>
-
-                    <label for="puntuacion">Puntuación: </label>
-                    <select name="puntuacion">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="campo-form-3">
-                    <label for="mensaje">Mensaje: </label>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
-                </div>
-
-                <section>
-                    <input type="hidden" name="_redirect" value="../index.html">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpiar</button>
-                </section>
-            </form>
-        </section>
     </main>
+
     <footer class="footer">
         <nav>
             <ul>
@@ -101,6 +62,8 @@
             </ul>
         </nav>
     </footer>
+    <script type="module" src="../js/carrito.js">
+    </script>
 </body>
 
 </html>

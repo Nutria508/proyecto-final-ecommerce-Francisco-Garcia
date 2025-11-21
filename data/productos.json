@@ -1,0 +1,170 @@
+[
+    {
+        "id": "1",
+        "nombre": "Dead by Daylight",
+        "img": "img/DBD.jpg",
+        "precio": "14.99"
+    },
+    {
+        "id": "2",
+        "nombre": "DLC: The Walking Dead",
+        "img": "img/DBD TWD.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "3",
+        "nombre": "DLC: Leatherface",
+        "img": "img/DBD leatherface.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "4",
+        "nombre": "DLC: Tokyo Ghoul",
+        "img": "img/DBD-Tokyo.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "5",
+        "nombre": "DLC: Castlevania",
+        "img": "img/DBD-castelvania.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "6",
+        "nombre": "DLC: Ghost Face",
+        "img": "img/dbd-ghostface.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "7",
+        "nombre": "DLC: Chucky",
+        "img": "img/DBD-chucky.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "8",
+        "nombre": "DLC: Resident Evil",
+        "img": "img/DBD-RE.jpg",
+        "precio": "8.99"
+    },
+    {
+        "id": "9",
+        "nombre": "DLC: Stranger Things",
+        "img": "img/DBD-ST.jpg",
+        "precio": "8.99"
+    },
+    {
+        "id": "10",
+        "nombre": "DLC: Sinister Grace",
+        "img": "img/DBD-SG.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "11",
+        "nombre": "DLC: Steady Pulse",
+        "img": "img/DBD-SP.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "12",
+        "nombre": "DLC: Halloween",
+        "img": "img/DBD-Halloween.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "13",
+        "nombre": "DLC: Charity Case",
+        "img": "img/DBD-CC.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "14",
+        "nombre": "DLC: Silent Hill",
+        "img": "img/DBD-SH.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "15",
+        "nombre": "DLC: Tomb Raider",
+        "img": "img/DBD-TR.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "16",
+        "nombre": "DLC: Alien",
+        "img": "img/DBD-alien.jpg",
+        "precio": "8.99"
+    },
+    {
+        "id": "17",
+        "nombre": "DLC: Dungeos & Dragons",
+        "img": "img/DBD-DD.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "18",
+        "nombre": "DLC: Doomed Course",
+        "img": "img/DBD-DC.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "19",
+        "nombre": "DLC: Sadako Rising",
+        "img": "img/DBD-SR.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "20",
+        "nombre": "DLC: SAW",
+        "img": "img/DBD-SAW.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "21",
+        "nombre": "DLC: Alan Wake",
+        "img": "img/DBD-AW.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "22",
+        "nombre": "DLC: End Transmission",
+        "img": "img/DBD-ET.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "23",
+        "nombre": "DLC: All Things Wicked",
+        "img": "img/DBD-ATW.jpg",
+        "precio": "5.99"
+    },
+    {
+        "id": "24",
+        "nombre": "DLC: Resident Evil project W",
+        "img": "img/DBD-REPW.jpg",
+        "precio": "8.99"
+    },
+    {
+        "id": "25",
+        "nombre": "DLC: Nicolas Cage",
+        "img": "img/DBD-NC.jpg",
+        "precio": "7.49"
+    },
+    {
+        "id": "26",
+        "nombre": "DLC: Five Nighs at Freddy's",
+        "img": "img/DBD-FNAF.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "27",
+        "nombre": "DLC: Ash vs Evil Dead",
+        "img": "img/DBD-AVED.jpg",
+        "precio": "3.74"
+    },
+    {
+        "id": "28",
+        "nombre": "DLC: Nightmare on Elm Street",
+        "img": "img/DBD-NOES.jpg",
+        "precio": "5.99"
+    }
+]

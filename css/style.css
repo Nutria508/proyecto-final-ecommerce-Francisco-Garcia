@@ -12,7 +12,7 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
-    background-image: url(../multimedia/fondo.webp);
+    background-image: url(../img/fondo.webp);
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -21,6 +21,7 @@ body {
 
 .header {
     background-color: rgba(0, 0, 0, 0.5);
+    min-height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,8 +47,10 @@ body {
 }
 
 .image {
-    filter: invert(100%)
+    filter: invert(100%);
 }
+
+
 
 .header__nav ul {
     list-style: none;
@@ -55,6 +58,17 @@ body {
     justify-content: center;
     gap: 2rem;
 }
+
+main {
+    flex: 1;
+    margin-left: 2rem auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 
 .header__nav a {
     text-decoration: none;
@@ -70,6 +84,7 @@ body {
 
 .footer {
     background-color: rgba(0, 0, 0, 0.5);
+    min-height: 15vh;
     padding: 2rem;
     color: red;
     display: flex;
@@ -115,13 +130,38 @@ body {
 
 ....................................................................................................*/
 
-main {
+/*Header main*/
+
+#mostrarCarrito {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    filter: invert(100%);
+}
+
+#mostrarCarrito:hover {
+    cursor: pointer;
+}
+
+/* Main Body */
+
+.main-home {
+
+    flex: 1;
+    margin-left: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+.cuerpo-main {
     width: 90%;
     flex: 1;
     margin: 2rem auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
 }
 
 main h1 {
@@ -142,11 +182,16 @@ main h2 {
     width: 80%;
 }
 
+/* ---------------------------------------------------------------------------------------------------------
+                                                Productos
+ */
+
 .productos-home {
     width: 100%;
     text-align: center;
 
 }
+
 
 .contenedor-tarjetas {
     display: flex;
@@ -155,6 +200,7 @@ main h2 {
     gap: 2rem;
     flex-direction: row;
 }
+
 
 .tarjeta-producto {
     background-color: black;
@@ -168,6 +214,7 @@ main h2 {
     gap: 1rem;
 }
 
+
 .tarjeta-producto:hover {
     border: 0.25rem solid;
 }
@@ -178,7 +225,13 @@ main h2 {
     align-items: center;
 }
 
-.tarjeta-producto div img {
+.tarjeta-producto div button {
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.tarjeta-producto div button img {
     padding-left: 12px;
     height: fit-content;
 }
@@ -188,7 +241,63 @@ main h2 {
     border-radius: 1px;
 }
 
-.reseñas {
+
+/*------------------------------------------------------------------------------------------------------ 
+                                                Carrito
+*/
+
+
+#carrito-de-compras{
+    height: 100vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carrito-de-compras h2{
+    text-align: center;
+}
+
+.tarjeta-carrito {
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.tarjeta-carrito img {
+    width: 30%;
+    overflow: hidden;
+
+}
+
+.tarjeta-carrito h3 {
+    height: 5rem;
+    width: 45%;
+    font-size: 1.2rem;
+    overflow: hidden;
+
+}
+.tarjeta-carrito p {
+    height: 5rem;
+    width: 25%;
+    text-align: start;
+
+}
+
+#total-carrito-index{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+                                                Reseñas
+*/
+
+.resenas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
@@ -206,15 +315,15 @@ main h2 {
 
 }
 
-.estrellas-reseña {
+.estrellas-resena {
     display: flex;
-
 }
 
-.estrellas-reseña img {
+.estrellas-resena img {
     filter: invert(50%);
     padding: 0.5rem;
 }
+
 
 
 /*.................................................................................................
@@ -227,51 +336,170 @@ main h2 {
     background-color: black;
     padding: 5rem;
     border-radius: 1rem;
-
     width: 60rem;
-
-
     margin: auto;
-
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.campo-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+.campo-form-1,
+.campo-form-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
-.campo-form label {
-  font-size: 2rem;
+
+.campo-form-2{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.campo-form input,
-.campo-form textarea,
-.campo-form select {
-  padding: 1rem;
-  font-size: 1.6rem;
-  border-radius: 0.5rem;
-  border: none;
+
+.campo-form-1 label,
+.campo-form-2 label,
+.campo-form-3 label {
+    font-size: 2rem;
 }
-.form section{
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.clasificacion img {
+    filter: invert(50%);
+    padding: 0.5rem;
+}
+
+
+.campo-form-1 input,
+.campo-form-2 select,
+.campo-form-3 textarea {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.form section {
     display: flex;
     gap: 2rem;
     justify-content: center;
 
 }
+
 .form button {
-  background-color: #b30724;
-  color: #e5e6e8;
-  border: none;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  cursor: pointer;
+    background-color: #b30724;
+    color: #e5e6e8;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
+
+
+/*.................................................................................................
+
+                                             Carrito
+
+....................................................................................................*/
+
+
+.ventana-carrito{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tarjeta-carrito-compras {
+    height: 10rem;
+    width: 70rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.image-container{
+    width:25rem;
+    height: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tarjeta-carrito-compras h3 {
+    width: 80%;
+    overflow: hidden;
+
+}
+.tarjeta-carrito-compras p {
+    width: 10%;
+    text-align:left;
+}
+.btn-eliminar-carrito,
+.btn-vaciar-carrito,
+.btn-comprar{
+    padding: 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+#resumen-carrito{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resumen-carrito div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#resumen-carrito div h3{
+    padding: 1rem;
+}
+.btn-eliminar-carrito:hover,
+.btn-vaciar-carrito:hover,
+.btn-comprar:hover{
+    cursor: pointer;
+}
+
+
+main a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: inline-block;
+    padding: 0.5rem;
+
+}
 
 /*.................................................................................................
 
@@ -281,28 +509,32 @@ main h2 {
 
 
 
-@media (max-width:600px){
-    .reseñas {
+@media (max-width:600px) {
+    .resenas {
         grid-template-columns: 1fr;
     }
+
     .header__nav ul,
     .footer nav ul,
     .footer__companies {
         flex-wrap: wrap;
     }
-    .header{
+
+    .header {
         justify-content: center;
     }
-    .header nav{
+
+    .header nav {
         margin-right: 0rem;
     }
-    
-    
+
+
 
 }
+
 @media (max-width: 768px) {
 
-    .reseñas {
+    .resenas {
         grid-template-columns: 1fr;
     }
 
@@ -311,9 +543,9 @@ main h2 {
     .footer__companies {
         flex-wrap: wrap;
     }
+
     .form {
         width: 87%;
     }
-    
-}
 
+}

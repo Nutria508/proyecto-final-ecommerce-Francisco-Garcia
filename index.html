@@ -1,187 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Dead By Deadlight</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="icon" type="image/png" href="./multimedia/logo-pagina.png" data-next-head="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./img/logo-pagina.png" data-next-head="">
 
 </head>
+
 <body>
     <header class="header">
         <p class="header__logo">
-            <a href="./index.html"><img src="./multimedia/Logo_dbd.webp" width="60px"></a>
+            <a href="./index.html"><img src="./img/Logo_dbd.webp" width="60px"></a>
         </p>
 
         <nav class="header__nav">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="">Servicios</a></li>
+                <li><a href="./pages/carrito.html">Carrito</a></li>
                 <li><a href="./pages/form.html">Contacto</a></li>
-                <li><a href=""><img class="image" src="./multimedia/carrito-de-compras.png"></a></li>
+                <li><button id="mostrarCarrito"><img src="./img/carrito-de-compras.png"> 
+                    <span id="contador-carrito">0</span>
+                </button></li>
             </ul>
         </nav>
-        
+
     </header>
-    <main>
-        <h1 class="titulo-home">Bienvenido a la tienda</h1>
-        <P class="parrafo-home">En esta tienda se encontrará el famoso juego de terror Dead by dailight y tambien sus respectivos DLC.
-        </P>
-        <section class="productos-home">
-            <h2>Productos</h2>
-            <div class="contenedor-tarjetas">
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD.jpg" alt="">
-                    <h3>Dead by Daylight</h3>
-                    <div>
-                        <p>$14.99</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD TWD.jpg" alt="">
-                    <h3>DLC: The Walking Dead</h3>
-                    <div>
-                        <p>$5.99</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD leatherface.jpg" alt="">
-                    <h3>DLC: Leatherface</h3>
-                    <div>
-                        <p>$3.74</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD-Tokyo.jpg" alt="">
-                    <h3>DLC: Tokyo Ghoul</h3>
-                    <div>
-                        <p>$3.74</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD-castelvania.jpg" alt="">
-                    <h3>DLC: Castlevania</h3>
-                    <div>
-                        <p>$5.99</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/dbd-ghostface.jpg" alt="">
-                    <h3>DLC: Ghost Face</h3>
-                    <div>
-                        <p>$3.74</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD-chucky.jpg" alt="">
-                    <h3>DLC: Chucky</h3>
-                    <div>
-                        <p>$3.74</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD-RE.jpg" alt="">
-                    <h3>DLC: Resident Evil</h3>
-                    <div>
-                        <p>$8.99</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-                
-                <article  class="tarjeta-producto">
-                    <img src="./multimedia/DBD-ST.jpg" alt="">
-                    <h3>DLC: Stranger Things</h3>
-                    <div>
-                        <p>$8.99</p>
-                        <a href=""><img class="image" src="./multimedia/carrito-de-compra-anadir.png"></a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <h2>Trailer del Juego</h2>
-        <section class="trailer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JGhIXLO3ul8?si=JEcxlnvn6BkUmej7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
 
-        <h2>Reseñas del juego</h2>
-        <section class="reseñas">
-
-            <section class="card">
-                <h4>DavidLeFLeur</h4>
-                <div class="estrellas-reseña">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
+    <main class="main-home">
+        <section class="cuerpo-main">
+            <h1 class="titulo-home">Bienvenido a la tienda</h1>
+            
+            <P class="parrafo-home">En esta tienda se encontrará el famoso juego de terror Dead by dailight y tambien
+                sus respectivos DLC.
+            </P>
+            <section class="productos-home">
+                <h2>Productos</h2>
+                <div id="contenedor-tarjetas" class= "contenedor-tarjetas">
+                    
                 </div>
-                <p>"Este juego es super entretenido y disfrutable hasta tal cierto punto, es un juego al cual si tuviera la oportunidad y tiempo libre le dedicaría horas y horas, desde hace años he consumido videos de este juego y contenido relacionado a él."</p>
+
             </section>
             
-            <section class="card">
-                <h4>vdogalan</h4>
-                <div class="estrellas-reseña">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
-                </div>
-                <p>"Es un juego de gameplay adictivo, lo que si tiene un fandom medio problematico, su chat es igual a LOL, me encanta"</p>            </section>
-            <section class="card">
-                <h4>JesusCristo Garcia</h4>
-                <div class="estrellas-reseña">
-                    <img src="./multimedia/estrella-solida.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
-                    <img src="./multimedia/estrella-vacia.png" alt="">
-                </div>
-                <p>"Tonterias anti-tunnel y anti-slug. Pero nadita para el Genrush."</p>
+            <h2>Trailer del Juego</h2>
+            <section class="trailer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JGhIXLO3ul8?si=JEcxlnvn6BkUmej7"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
+            <h2>Reseñas del juego</h2>
+            <section id="contenedor-resenas" class="resenas">
+
+            </section>
         </section>
+
+        <section id="carrito-de-compras" hidden="True">
+            <h2>Carrito</h2>
+            <section id="contenedor-carrito">
+                
+            </section>
+            <section id="total-carrito-index">
+                <h3>Total</h3>
+                <h3 id="total-index">$0</h3>
+            </section>
+        </section>
+
     </main>
+
     <footer class="footer">
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="">Acerca de</a></li>
-                <li><a href="">Servicios</a></li>
+                <li><a href="./pages/carrito.html">carrito</a></li>
                 <li><a href="./pages/form.html">Contacto</a></li>
             </ul>
         </nav>
         <nav>
             <ul class="footer__companies">
-                <li><a href="https://www.facebook.com" target="_blank"><img src="./multimedia/facebook.png" alt="facebook"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><img src="./multimedia/instagram.png" alt="instagram"></a></li>
-                <li><a href="https://x.com/" target="_blank"><img src="./multimedia/twitter-alt.png" alt="twitter"></a></li>
-                <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./multimedia/whatsapp.png" alt="whatsapp"></a></li>
-                <li><a href="https://web.telegram.org/" target="_blank"><img src="./multimedia/telegram.png" alt="telegram"></a></li>
-                <li><a href="https://discord.com/" target="_blank"><img src="./multimedia/discord.png" alt="discord"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png"
+                            alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://x.com/" target="_blank"><img src="./img/twitter-alt.png" alt="twitter"></a>
+                </li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png"
+                            alt="whatsapp"></a></li>
+                <li><a href="https://web.telegram.org/" target="_blank"><img src="./img/telegram.png"
+                            alt="telegram"></a></li>
+                <li><a href="https://discord.com/" target="_blank"><img src="./img/discord.png"
+                            alt="discord"></a></li>
             </ul>
         </nav>
     </footer>
+    <script type="module" src="./js/index.js">
+    </script>
 </body>
+
 </html>

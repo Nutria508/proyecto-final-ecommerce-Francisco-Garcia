@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "nombre": "DavidLeFLeur",
+        "puntuacion": "3",
+        "texto": "Este juego es super entretenido y disfrutable hasta tal cierto punto, es un juego al cual si tuviera la oportunidad y tiempo libre le dedicaría horas y horas, desde hace años he consumido videos de este juego y contenido relacionado a él."
+    },
+    {
+        "id": "2",
+        "nombre": "vdogalan",
+        "puntuacion": "4",
+        "texto": "Es un juego de gameplay adictivo, lo que si tiene un fandom medio problematico, su chat es igual a LOL, me encanta"
+    },
+    {
+        "id": "3",
+        "nombre": "JesusCristo Garcia",
+        "puntuacion": "1",
+        "texto": "Tonterias anti-tunnel y anti-slug. Pero nadita para el Genrush."
+    }
+]
